@@ -1,20 +1,26 @@
 [[docs]]
 name = "Overview"
-weight = 1
+weight = 10
 identifier = "overview"
 url = "/docs/overview/"
 
 [[docs]]
 name = "Plans"
-weight = 2
+weight = 40
 identifier = "plans"
 url = "/docs/plans/"
 
 [[docs]]
 name = "Mapping"
-weight = 3
+weight = 80
 identifier = "mapping"
 url = "/docs/mapping/"
+
+[[docs]]
+name = "Customer Info"
+weight = 130
+identifier = "customer_info"
+url = "/docs/customer_info/"
 
 [[main]]
 name = "Docs"
