@@ -6,48 +6,58 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <a class="btn btn-primary btn-lg px-4 mb-2"
+         href="https://planapi.clareinfotech.com"
+         role="button">{{ i18n "get-started" }}</a>
+      <p class="meta">Powered by <a href="https://clareinfotech.com">Clare Infotech</a></p>
     </div>
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-sm">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-        </div>
+{{ if eq $.Site.Language.LanguageName "English" }}
+<section class="section section-sm">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Latest Mobile Plans</h2>
+        <p>Quickly and easily access up-to-date information about prepaid, postpaid, and DTH plans from various mobile
+          operators.</p>
       </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
-        </div>
+
+      <div class="col-lg-5">
+        <h2 class="h4">Finding Operator in Snap ⚡️</h2>
+        <p>Map a customer's mobile number to its corresponding operator with ease</p>
+      </div>
+
+      <div class="col-lg-5">
+        <h2 class="h4">Utilities with Ease</h2>
+        <p>Obtain information about a customer's electricity or piped gas bill payments.</p>
       </div>
     </div>
-  </section>
-  {{ end }}
+
+
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5">
+        <h2 class="h4">Smooth API Operation</h2>
+        <p>The API includes robust error handling to ensure smooth operation and minimize disruptions.</p>
+      </div>
+
+      <div class="col-lg-5">
+        <h2 class="h4">Latest API Improvements</h2>
+        <p>The API is regularly updated with new features and improvements to meet the evolving needs of users.</p>
+      </div>
+
+      <div class="col-lg-5">
+        <h2 class="h4">Help</h2>
+        <p>Receive support from the API team for any questions or issues you may encounter.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}
 {{ end }}
 
 {{ define "sidebar-footer" }}

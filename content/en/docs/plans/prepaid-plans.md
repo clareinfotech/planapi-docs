@@ -35,12 +35,12 @@ API token and how to use it in API requests.
 
 #### Header Parameters
 
-| Parameter      | Description                                       | Required |
-|----------------|---------------------------------------------------|----------|
-| authentication | The authentication token from the plansapi panel. | Yes      |
+| Parameter        | Type   | Description                                       | Required |
+|------------------|--------|---------------------------------------------------|----------|
+| `authentication` | String | The authentication token from the plansapi panel. | Yes      |
 
 ### Query Parameters
 
-| Parameter | Description                                                                            | Required |
-|-----------|----------------------------------------------------------------------------------------|----------|
-| operator  | The name of the operator for which you want to retrieve the prepaid plans information. | Yes      |
+| Parameter  | Type   | Description                                                                            | Required |
+|------------|--------|----------------------------------------------------------------------------------------|----------|
+| `operator` | String | The name of the operator for which you want to retrieve the prepaid plans information. | Yes      |

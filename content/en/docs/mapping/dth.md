@@ -13,3 +13,34 @@ menu:
 weight: 120
 toc: true
 ---
+
+### Endpoint URL
+
+```bash
+/api/v1/operator_map/postpaid
+```
+
+### Description
+
+This endpoint provides specific dth operator details for customer number.
+
+### Method
+
+GET
+
+### Authentication
+
+Token-based authentication is used for API access. API documentation provides detailed information on how to obtain an
+API token and how to use it in API requests.
+
+#### Header Parameters
+
+| Parameter        | Type   | Description                                       | Required |
+|------------------|--------|---------------------------------------------------|----------|
+| `authentication` | String | The authentication token from the plansapi panel. | Yes      |
+
+### Query Parameters
+
+| Parameter | Type   | Description                                                                 | Required |
+|-----------|--------|-----------------------------------------------------------------------------|----------|
+| `number`  | String | The dish customer number for which operator information is being requested. | Yes      |
