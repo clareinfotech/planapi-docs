@@ -12,8 +12,8 @@ description = "Plan api"
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "planapi.netlify.app"
+titleHome = "Plan api documentation"
 
 ## Twitter Cards
 twitterSite = "@getdoks"
